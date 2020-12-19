@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
+@media only screen and (max-width: 990px) {	
+	body {
+		min-width: 355px;
+	}
+	
+	header {
+		margin-top: 75px;
+		margin-bottom: -100px;
+	}
+
+	.fix-top {
+		background-color: #fff;
+		position: fixed;
+		top: 0;
+		right: 0;
+		left: 0;
+		z-index: 1030;
+	}
+
+	#category {
+		display: none;
+	}
+}
+
+body {
+  	font-family: 'Poppins', sans-serif;
+	margin-top: 2%;
+	width: 100%;
+	text-align: center;
+	-webkit-transition: .3s all;
+    transition: .3s all;
+}
+
+header {
+	background-color: #000;
+}
+
+section {
+	display: block;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-top: 350px;
+	margin-bottom: 100px;	
+}
+
+footer {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	background-color: #000;
+	color: white;
+}
+
+footer a {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	color: #fff;
+	border-radius: 50%;
+	-webkit-transition: .3s all;
+    transition: .3s all;
+}
+
+footer a:hover {
+	width: 60px;
+	height: 60px;
+	margin-top: -5px;
+	border: #000;
+	background-color: #0000aa;
+}
+
+/* Class */
+.bg-black {
+	background-color: #000;
+}
+
+.category-link {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.category-icon {
+	height: 15px;
+}
+
+.center {
+  	margin-left: auto;
+  	margin-right: auto;
+}
+
+.break-side {
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.hideleft {
+	opacity: 0;
+	padding-right: 10%;
+	-webkit-transition: .3s all;
+	transition: .3s all;
+}
+
+.hidecenter {
+	opacity: 0;
+	-webkit-transition: .3s all;
+	transition: .3s all;
+}
+
+.invisible {
+	display: none;
+}
+
+.fadein {
+	-webkit-transition: .3s all;
+    transition: .3s all;
+}
+
+#about a {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #000;
+    display: flex;
+    color: #000;
+	border-radius: 50%; 
+	-webkit-transition: .3s all;
+    transition: .3s all;
+}
+
+#about a:hover {
+	margin-top: -10px;
+	width: 50px;
+	height: 50px;
+	border: #fff;
+}
+
+/* Bootstrap Customize */
+a {
+	color: #000;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+hr {
+	width: 30%;	
+}
+
+.btn-link {
+	color: #000;
+}
+
+.form-control {
+	max-width: 80%;
+}
+
+.btn-secondary {
+	background-color: #000;
+	border-color: #000;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
+.rounded-circle {
+	-webkit-transition: .3s all;
+    transition: .3s all;
+}
+
+.rounded-circle:hover {
+	cursor: zoom-in;
+	margin-top: -50px;
+	width: 50%;
+	height: auto;
+}
