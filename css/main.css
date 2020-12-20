@@ -1,11 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
 
 @media only screen and (max-width: 990px) {	
-	body {
-		min-width: 355px;
-	}
-	
-	header {
+	#header {
 		margin-top: 75px;
 		margin-bottom: -100px;
 	}
@@ -22,6 +18,29 @@
 	#category {
 		display: none;
 	}
+
+	footer a {
+		width: 20px;
+		height: 20px;
+		border: 1px solid #fff;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: #fff;
+		border-radius: 50%;
+		-webkit-transition: .3s all;
+		transition: .3s all;
+	}
+	
+	footer a:hover {
+		border: #000;
+		background-color: #0000aa;
+	}
+
+	footer img {
+		width: auto;
+		height: 20px;
+	}
 }
 
 body {
@@ -29,6 +48,7 @@ body {
 	margin-top: 2%;
 	width: 100%;
 	text-align: center;
+	min-width: 280px;
 	-webkit-transition: .3s all;
     transition: .3s all;
 }
@@ -51,7 +71,6 @@ footer {
 	margin-right: auto;
 	width: 100%;
 	background-color: #000;
-	color: white;
 }
 
 footer a {
@@ -73,6 +92,16 @@ footer a:hover {
 	margin-top: -5px;
 	border: #000;
 	background-color: #0000aa;
+}
+
+footer img {
+	width: auto;
+	height: 50px;
+}
+
+nav img {
+	width: auto;
+	height: 50px;
 }
 
 /* Class */
