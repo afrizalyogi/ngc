@@ -1,22 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
 
 @media only screen and (max-width: 990px) {	
-	#header {
+	header {
 		margin-top: 75px;
 		margin-bottom: -100px;
-	}
-
-	.fix-top {
-		background-color: #fff;
-		position: fixed;
-		top: 0;
-		right: 0;
-		left: 0;
-		z-index: 1030;
-	}
-
-	#category {
-		display: none;
 	}
 
 	footer a {
@@ -41,6 +28,19 @@
 		width: auto;
 		height: 20px;
 	}
+	
+	#category {
+		display: none;
+	}
+
+	.fix-top {
+		background-color: #fff;
+		position: fixed;
+		top: 0;
+		right: 0;
+		left: 0;
+		z-index: 1030;
+	}
 }
 
 body {
@@ -63,6 +63,11 @@ section {
 	margin-right: 5%;
 	margin-top: 350px;
 	margin-bottom: 100px;	
+}
+
+nav img {
+	width: auto;
+	height: 50px;
 }
 
 footer {
@@ -99,14 +104,13 @@ footer img {
 	height: 50px;
 }
 
-nav img {
-	width: auto;
-	height: 50px;
-}
-
-/* Class */
 .bg-black {
 	background-color: #000;
+}
+
+.break-side {
+	padding-left: 5%;
+	padding-right: 5%;
 }
 
 .category-link {
@@ -123,9 +127,9 @@ nav img {
   	margin-right: auto;
 }
 
-.break-side {
-	padding-left: 5%;
-	padding-right: 5%;
+.fadein {
+	-webkit-transition: .3s all;
+    transition: .3s all;
 }
 
 .hideleft {
@@ -143,11 +147,6 @@ nav img {
 
 .invisible {
 	display: none;
-}
-
-.fadein {
-	-webkit-transition: .3s all;
-    transition: .3s all;
 }
 
 #about a {
@@ -168,7 +167,7 @@ nav img {
 	border: #fff;
 }
 
-/* Bootstrap Customize */
+/* Bootstrap Customization Here */
 a {
 	color: #000;
 }
@@ -185,15 +184,15 @@ hr {
 	color: #000;
 }
 
-.form-control {
-	max-width: 80%;
-}
-
 .btn-secondary {
 	background-color: #000;
 	border-color: #000;
 	margin-left: 2px;
 	margin-right: 2px;
+}
+
+.form-control {
+	max-width: 80%;
 }
 
 .rounded-circle {
