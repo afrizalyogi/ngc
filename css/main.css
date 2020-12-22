@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 
 @media only screen and (max-width: 990px) {	
 	header {
@@ -17,11 +17,6 @@
 		border-radius: 50%;
 		-webkit-transition: .3s all;
 		transition: .3s all;
-	}
-	
-	footer a:hover {
-		border: #000;
-		background-color: #0000aa;
 	}
 
 	footer img {
@@ -43,24 +38,28 @@
 	}
 }
 
-body {
-  	font-family: 'Poppins', sans-serif;
-	margin-top: 2%;
+html {
 	width: 100%;
+	min-width: 300px;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	margin-left: auto;
+	margin-right: auto;
 	text-align: center;
-	min-width: 280px;
 	-webkit-transition: .3s all;
     transition: .3s all;
 }
 
 header {
+	width: 100%;
 	background-color: #000;
 }
 
 section {
 	display: block;
-	margin-left: 5%;
-	margin-right: 5%;
+	width: 80%;
 	margin-top: 350px;
 	margin-bottom: 100px;	
 }
@@ -74,7 +73,6 @@ footer {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	width: 100%;
 	background-color: #000;
 }
 
@@ -96,7 +94,7 @@ footer a:hover {
 	height: 60px;
 	margin-top: -5px;
 	border: #000;
-	background-color: #0000aa;
+	background-color: #0025FF;
 }
 
 footer img {
@@ -123,8 +121,9 @@ footer img {
 }
 
 .center {
-  	margin-left: auto;
-  	margin-right: auto;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .fadein {
@@ -184,11 +183,46 @@ hr {
 	color: #000;
 }
 
+.btn-primary {
+	background-color: #0025FF;
+}
+
+.btn-primary:hover {
+	border-color: #000;
+	background-color: #001199;
+}
+
 .btn-secondary {
 	background-color: #000;
 	border-color: #000;
 	margin-left: 2px;
 	margin-right: 2px;
+}
+
+.btn-outline-primary {
+	border-color: #000; 
+	color: #fff;
+}
+
+.btn-outline-primary:hover {
+	border-color: #000;
+	background-color: #0025FF;
+}
+
+.card {
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+}
+
+.dropdown-item:hover {
+	border-radius: 5px;
+	color: #fff;
+	background-color: #0025FF;
+}
+
+.transition {
+	-webkit-transition: .3s all;
+    transition: .3s all;
 }
 
 .form-control {

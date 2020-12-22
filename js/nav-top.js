@@ -29,7 +29,7 @@ document.write(`
                         <a class="dropdown-item" href="menu/processor.html">
                             Processor
                         </a>
-                          <a class="dropdown-item" href="menu/ram.html">
+                        <a class="dropdown-item" href="menu/ram.html">
                             RAM
                         </a>
                         <a class="dropdown-item" href="menu/hdd.html">
@@ -54,7 +54,7 @@ document.write(`
             </ul>
             <form class="form-inline">
                 <input class="form-control" type="search" placeholder="Cari Disini">
-                <button class="btn btn-outline-dark" type="submit">
+                <button class="btn btn-primary" type="submit">
                     Cari
                 </button>
             </form>

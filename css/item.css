@@ -1,20 +1,30 @@
+@media only screen and (max-width: 990px) {	
+}
+
+@media only screen and (min-width: 990px) {
+	#display-category {
+		display: none;
+	}
+}
+
 section {
+	margin-top: 150px;
 	margin-left: auto;
 	margin-right: auto;
-	text-align: center;
 	-webkit-transition: .2s all;
     transition: .2s all;
 }
 
-section a {
-	width: 80%;
-	height: 500px;
+section img {
+	height: 50px;
 }
 
-section a:hover {
-	display: block;
+section .card img {
 	margin-left: auto;
 	margin-right: auto;
-	text-align: center;
-	width: auto;
+	width: 50%;
+	height: auto;
+}
+section .row .col {
+	min-width: 150px;
 }
