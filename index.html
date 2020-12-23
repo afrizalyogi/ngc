@@ -6,29 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/main.css">
-	<link rel="icon" href="img/logo/ngct.png">
+	<link rel="icon" href="assets/ngc.ico">
 	<title>NGC Computer</title>
 </head>
 
 <body>
 
-<noscript><hr> <h3>Silahkan Mengaktifkan Javascript di Browser Anda.</h3> <hr style="margin-bottom: -200px"></noscript>
-
-<script src="js/nav-top.js"></script>
+<noscript><hr> <h3>Silahkan Mengaktifkan Javascript di Browser Anda.</h3> <hr></noscript>
 
 <header class="carousel slide carousel-fade">
 	<div class="carousel-inner">
 		<div class="carousel-item active">
-			<img class="w-100" src="img/carousel/carousel1.jpg" alt="ROG Zephyrus Duo 15">
+			<img class="w-100" src="img/carousels/carousel1.jpg" alt="ROG Zephyrus Duo 15">
 		</div>
 		<div class="carousel-item">
-			<img class="w-100" src="img/carousel/carousel2.jpg" alt="ROG Zephyrus S GX502">
+			<img class="w-100" src="img/carousels/carousel2.jpg" alt="ROG Zephyrus S GX502">
 		</div>
 		<div class="carousel-item">
-			<img class="w-100" src="img/carousel/carousel3.jpg" alt="Lenovo Legion 7i">
+			<img class="w-100" src="img/carousels/carousel3.jpg" alt="Lenovo Legion 7i">
 		</div>
 		<div class="carousel-item">
-			<img class="w-100" src="img/carousel/carousel4.jpg" alt="RTX 3080">
+			<img class="w-100" src="img/carousels/carousel4.jpg" alt="RTX 3080">
 		</div>
 	</div>
 	<a class="carousel-control-prev" href="header" role="button" data-slide="prev">
@@ -39,12 +37,135 @@
 	</a>
 </header>
 
-<script src="js/nav-category.js"></script>
+<nav id="category" class="navbar navbar-expand-lg navbar-dark bg-black">
+	<ul class="navbar-nav w-75 center">
+		<li class="nav-item center">
+			<a class="btn btn-outline-primary" href="menu/laptop.html#category">
+				<img class="category-icon" src="img/assets/laptop.png" alt="Laptop">
+				<br>
+				Laptop
+			</a>
+		</li>
+		<li class="nav-item center">
+			<a class="btn btn-outline-primary" href="menu/mb.html#category">
+				<img class="category-icon" src="img/assets/motherboard.png" alt="Motherboard">
+				<br>
+				Motherboard
+			</a>
+		</li>
+		<li class="nav-item center">
+			<a class="btn btn-outline-primary" href="menu/processor.html#category">
+				<img class="category-icon" src="img/assets/proci.png" alt="Processor">
+				<br>
+				Processor
+			</a>
+		</li>
+		<li class="nav-item center">
+			<a class="btn btn-outline-primary" href="menu/ram.html#category">
+				<img class="category-icon" src="img/assets/ram.png" alt="RAM">
+				<br>
+				RAM
+			</a>
+		</li>
+		<li class="nav-item center">
+			<a class="btn btn-outline-primary" href="menu/hdd.html#category">
+				<img class="category-icon" src="img/assets/hdd.png" alt="HDD/SSD">
+				<br>
+				HDD/SSD
+			</a>
+		</li>
+		<li class="nav-item center">
+			<a class="btn btn-outline-primary" href="menu/psu.html#category">
+				<img class="category-icon" src="img/assets/psu.png" alt="Power Supply">
+				<br>
+				PSU
+			</a>
+		</li>
+		<li class="nav-item center">
+			<a class="btn btn-outline-primary" href="menu/keyboard.html#category">
+				<img class="category-icon" src="img/assets/keyboard.png" alt="Keyboard">
+				<br>
+				Keyboard
+			</a>
+		</li>
+		<li class="nav-item center">
+			<a class="btn btn-outline-primary" href="menu/mouse.html#category">
+				<img class="category-icon" src="img/assets/mouse.png" alt="Mouse">
+				<br>
+				Mouse
+			</a>
+		</li>
+	</ul>
+</nav>
+
+<div id="round-border"></div>
+
+<nav class="navbar navbar-expand-lg navbar-light break-side fix-top hiddenup">
+	<a class="navbar-brand" href="#">
+		<img src="img/assets/ngcc.svg" alt="NGC Computer" height="50px">
+	</a>
+
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-top">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	
+	<div id="nav-top" class="collapse navbar-collapse">
+		<ul class="navbar-nav mr-auto">
+			<li class="nav-item active">
+				<a class="nav-link" href="#">
+					Beranda
+				</a>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">
+					Kategori
+				</a>
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="menu/laptop.html#category">
+						Laptop
+					</a>
+					<a class="dropdown-item" href="menu/mb.html#category">
+						Motherboard
+					</a>
+					<a class="dropdown-item" href="menu/processor.html#category">
+						Processor
+					</a>
+					<a class="dropdown-item" href="menu/ram.html#category">
+						RAM
+					</a>
+					<a class="dropdown-item" href="menu/hdd.html#category">
+						HDD/SSD
+					</a>
+					<a class="dropdown-item" href="menu/psu.html#category">
+						PSU
+					</a>
+					<a class="dropdown-item" href="menu/keyboard.html#category">
+						Keyboard
+					</a>
+					<a class="dropdown-item" href="menu/mouse.html#category">
+						Mouse
+					</a>
+				</div>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#about">
+					Tentang
+				</a>
+			</li>
+		</ul>
+		<form class="form-inline ml-auto">
+			<input class="form-control ml-auto" type="search" placeholder="Cari Disini">
+			<button class="btn btn-primary mr-auto" type="submit">
+				Cari
+			</button>
+		</form>
+	</div>
+</nav>
 
 <section class="container">
 	<div class="row">
 		<div class="col-lg-5 hiddenleft">
-			<img src="img/product/laptop/rog-duo-15-gx550.png" alt="ROG Zephyrus Duo 15" width="70%">
+			<img src="img/products/laptop/rog-duo-15-gx550.png" alt="ROG Zephyrus Duo 15" width="70%">
 		</div>
 		<div class="col hiddencenter">
 			<br>
@@ -64,7 +185,7 @@
 <section class="container">
 <div class="row">
 		<div class="col-lg-5 hiddenleft">
-			<img src="img/product/pc/red-pc.png" alt="Build Your Gaming PC" width="50%">
+			<img src="img/products/pc/red-pc.png" alt="Build Your Gaming PC" width="50%">
 		</div>
 		<div class="col hiddencenter">
 			<br>
@@ -83,57 +204,33 @@
 
 <section class="container">
 	<h1>
-		<b>Official Brand</b>
-	</h1>
-		<hr>
-		<br>
-	<div class="carousel slide">
-		<div class="carousel-inner">
-			<div class="carousel-item active">
-				<img src="img/brand/brand1.png" alt="Corsair" width="60%">
-			</div>
-			<div class="carousel-item">
-				<img src="img/brand/brand2.png" alt="Logitech" width="60%">
-			</div>
-			<div class="carousel-item">		
-				<img src="img/brand/brand3.png" alt="Steel Series" width="60%">
-			</div>
-			<div class="carousel-item">
-				<img src="img/brand/brand4.png" alt="Fantech" width="60%">
-			</div>
-		</div>
-	</div>
-</section>
-		
-<section class="container">
-	<h1>
 		<b>Testimoni</b>
 	</h1>
 		<hr>
 		<br>
-	<div class="carousel slide">
+	<div class="carousel slide hiddencenter">
 		<div class="carousel-inner center">
 			<div class="carousel-item active">
 				<h5>
-					<img src="img/icon/double-quote.png" alt="``" width="50px">
+					<img src="img/assets/double-quote.png" alt="``" width="50px">
 					<b>Puas banget belanja disini, produk ori semua, harga pas di kantong, Recommended pokoknya.</b>
-					<img src="img/icon/double-quotes.png" alt="``" width="50px">
+					<img src="img/assets/double-quotes.png" alt="``" width="50px">
 				</h5>
 					<p class="author">~ Alexander Sukri</p>
 			</div>
 			<div class="carousel-item">
 				<h5>
-					<img src="img/icon/double-quote.png" alt="``" width="50px">
+					<img src="img/assets/double-quote.png" alt="``" width="50px">
 					<b>Karyawan ramah, kualitas barang sempurna, garansi terjamin. Ga rugi deh mampir di toko ini.</b>
-					<img src="img/icon/double-quotes.png" alt="``" width="50px">
+					<img src="img/assets/double-quotes.png" alt="``" width="50px">
 				</h5>
 					<p class="author">~ Joni Sutanto</p>
 			</div>
 			<div class="carousel-item">
 				<h5>
-					<img src="img/icon/double-quote.png" alt="``" width="50px">
+					<img src="img/assets/double-quote.png" alt="``" width="50px">
 					<b>Kualitas produk ok, Barang ori semua, Pelayanan/respon ramah.</b>
-					<img src="img/icon/double-quotes.png" alt="``" width="50px">
+					<img src="img/assets/double-quotes.png" alt="``" width="50px">
 				</h5>
 					<p class="author">~ Yanto Mukoto</p>
 			</div>
@@ -148,7 +245,7 @@
 		<hr>	
 		<br>
 	<div class="row text-left">
-		<div class="col-lg-7">
+		<div class="col-lg-7 break-tb">
 			<h5>
 				<b>Selamat datang di NGC Computer,</b>
 			</h5>
@@ -164,7 +261,7 @@
 				Kami harap Anda puas dengan produk kami. Jika Anda memiliki pertanyaan atau komentar, jangan ragu untuk menghubungi kami.
 			</p>
 		</div>
-		<div class="col">
+		<div class="col break-tb">
 			<p>	
 				<b>
 					Ada Saran, Kritik atau Pertanyaan ?
@@ -173,16 +270,12 @@
 				</b>
 			</p>
 			<form action="mailto:nagechicomputer@gmail.com">
-				<div class="row">
-					<div class="col">
+					<br>
 						Nama :
-						<input type="text" class="form-control">
-					</div>
-					<div class="col">	
+					<input type="text" class="form-control">
+					<br>
 						Email :
-						<input type="email" class="form-control">
-					</div>
-				</div>
+					<input type="email" class="form-control">
 					<br>
 						Judul :
 					<input type="text" class="form-control">
@@ -201,8 +294,8 @@
 		<br>
 		<b>NGC Computer.</b>
 	</h6>
-	<div class="row mt-5">
-		<div class="col">
+	<div class="row break-tb">
+		<div class="col center break-tb hiddenup">
 			<img src="img/profiles/N.jpg" alt="N" class="rounded-circle" width="30%" height="auto">
 			<br>
 			<br>
@@ -210,13 +303,13 @@
 				<b>Nando Prayoga</b>
 			</h5>
 				<p>"Semua makhluk hebat dalam satu hal, tapi tidak dalam segala hal."</p>
-			<div class="d-inline-flex center w-100">
+			<div class="row center w-100">
 				<a href="mailto:nandoprygp@gmail.com" class="tentang-link" style="margin-left: auto; margin-right: auto">
-					<img src="img/icon/email.png" alt="Email" height="100%">
+					<img src="img/assets/email.png" alt="Email" height="100%">
 				</a>
 			</div>
 		</div>
-		<div class="col">
+		<div class="col-lg-4 center break-tb hiddenup">
 			<img src="img/profiles/G.gif" alt="G" class="rounded-circle" width="30%" height="auto">
 			<br>
 			<br>
@@ -224,23 +317,23 @@
 				<b>Afrizal Yogi</b>
 			</h5>
 				<p>"Bersih tidak akan ada tanpa kotor, dan kita tidak akan tahu kotor tanpa adanya bersih."</p>
-			<div class="d-inline-flex center w-100">
+			<div class="row center w-100">
 				<a href="mailto:xxgdev@gmail.com" class="tentang-link" style="margin-left: auto; margin-right: auto">
-					<img src="img/icon/email.png" alt="Email" height="100%">
+					<img src="img/assets/email.png" alt="Email" height="100%">
 				</a>				
 				<a href="https://www.instagram.com/afrz.g/" class="tentang-link" style="margin-left: auto; margin-right: auto">
-					<img src="img/icon/ig.png" alt="Insta" height="100%"> 
+					<img src="img/assets/ig.png" alt="Insta" height="100%"> 
 				</a>
 				<br>
 				<a href="https://discord.com/invite/T2sAHcB" class="tentang-link" style="margin-left: auto; margin-right: auto">
-					<img src="img/icon/discord.png" alt="Discord" height="100%"> 
+					<img src="img/assets/discord.png" alt="Discord" height="100%"> 
 				</a>
 				<a href="https://github.com/OGCodee" class="tentang-link" style="margin-left: auto; margin-right: auto">
-					<img src="img/icon/github.png" alt="Github" height="100%"> 
+					<img src="img/assets/github.png" alt="Github" height="100%"> 
 				</a>
 			</div>	
 		</div>
-		<div class="col">
+		<div class="col center break-tb hiddenup">
 			<img src="img/profiles/C.jpg" alt="C" class="rounded-circle" width="30%" height="auto">
 			<br>
 			<br>
@@ -248,9 +341,9 @@
 				<b>Christian Bagus</b>
 			</h5>
 				<p>"Dua orang tidak mungkin memiliki mimpi yang sama, apalagi dalam waktu yang bersamaan."</p>
-			<div class="d-inline-flex center w-100">
+			<div class="row center w-100">
 				<a href="mailto:christianbagus05@gmail.com" class="tentang-link center" style="margin-left: auto; margin-right: auto">
-					<img src="img/icon/email.png" alt="Email" width="100%"> 
+					<img src="img/assets/email.png" alt="Email" width="100%"> 
 				</a>
 			</div>
 		</div>

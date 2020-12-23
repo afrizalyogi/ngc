@@ -1,20 +1,26 @@
 document.write(`
+	<div id="round-border"></div>
+
     <footer>
-    	<br>
-    	<hr style="background-color: #fff; width: 50%">
-    	<div class="d-inline-flex w-100">
-    		<img src="img/logo/ngcc100.png" alt="NGC Computer" style="margin-left: auto; cursor: pointer">
-    		<a href="mailto:nagechicomputer@gmail.com" style="margin-left: 5%">
-    			<img src="img/icon/email-w.png" alt="Email">
-    		</a>
-    		<a href="https://www.instagram.com/ngccomputer/" style="margin-left: 5%; margin-right: 5%">
-    			<img src="img/icon/ig-w.png" alt="Insta">
-    		</a>
-    		<a href="https://discord.com/invite/EgTQyquemM" style="margin-right: auto">
-    			<img src="img/icon/discord-w.png" alt="Discord">
-    		</a>
-    	</div>
-    	<hr style="background-color: #fff; width: 50%">	
-    	<br>
+		<br>
+		<hr class="bg-light w-50">
+		<div class="row w-50 center">
+			<div class="col-lg-5 center">
+			<img src="img/assets/ngcc.svg" alt="NGC Computer" style="cursor: pointer">
+			</div>
+			<div class="col center d-inline-flex">
+			<a class="center" href="mailto:nagechicomputer@gmail.com">
+				<img src="img/assets/email-w.png" alt="Email">
+			</a>
+			<a class="center" href="https://www.instagram.com/ngccomputer/">
+				<img src="img/assets/ig-w.png" alt="Insta">
+			</a>
+			<a class="center" href="https://discord.com/invite/EgTQyquemM">
+				<img src="img/assets/discord-w.png" alt="Discord">
+			</a>
+			</div>
+		</div>
+		<hr class="bg-light w-50">	
+		<br>
     </footer>
 `);
