@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/kasir.css">
+    <script src="../js/kasir.js"></script>
+	<link rel="icon" href="/icon/ngc.ico">
+	<title>NGC Computer - Kasir</title>
+</head>
+
+<body>
+    <nav id="nav-top" class="navbar navbar-expand-lg navbar-light break-side">
+        <a class="navbar-brand mr-auto" href="#">
+            <img src="../img/assets/ngcc.svg" alt="NGC Computer" height="50px">
+        </a>
+        <a id="profile" class="ml-auto" href="#" data-toggle="dropdown" onclick="callBtn()">
+            <img src="../img/assets/user-circle.svg" alt="">
+        </a>
+        <div class="">
+            <div id="log-out">
+                <button class="btn btn-outline-dark" onclick="logOut()"><b>Log Out</b></button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <form>
+                        <div class="form-row">
+                            <div class="col">
+                                <small class="input-text"><b>Nama Barang :</b></small>
+                                <input class="form-control">
+                            </div>
+                            <div class="col-5">
+                                <small class="input-text"><b>Jumlah Beli :</b></small>
+                                <input class="form-control" type="number">
+                            </div>
+                        </div>
+                        <br>
+                        <small class="input-text"><b>Harga Satuan :</b></small>
+                        <input id="harga-satuan" class="form-control text-right" disabled>
+                        <br>
+                        <b class="input-text">Total :</b>
+                        <input id="total-1" class="form-control text-right" disabled>
+                        <br>
+                        <div class="col d-inline-flex">
+                            <input id="btn-input" class="btn btn-primary ml-auto mr-2" type="button" value="Input">
+                            <button class="btn btn-outline-dark" type="reset">Reset</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="card card-kasir-sm">
+                <div class="row break-side mt-2">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">NO</th>
+                                <th scope="col">Nama Barang</th>
+                                <th scope="col">Harga Satuan</th>
+                                <th scope="col">Jumlah Beli</th>
+                                <th scope="col">Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="row">
+                    <div class="col card no-shadow w-100-sm">
+                        <b>Total Belanja :</b>
+                        <input id="total-all" class="form-control borderless text-right font-weight-bold" disabled>
+                    </div>
+                    <div class="col-lg-2 center">
+                        <input id="btn-input" class="btn btn-primary mt-4 mb-2 w-100-sm" type="button" value="Bayar">
+                        <br>
+                        <button class="btn btn-outline-dark w-100-sm" type="reset">Reset</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</body>

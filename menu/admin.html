@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/admin.css">
+    <script src="../js/admin.js"></script>
+	<link rel="icon" href="/icon/ngc.ico">
+	<title>NGC Computer - Admin Panel</title>
+</head>
+
+<body>
+    <nav id="sidebar">
+        <a href="#">
+            <img class="nav-img" src="../img/assets/ngcc.svg" alt="NGC Computer">
+        </a>
+        <ul class="side-nav">
+            <li id="btn-item" class="links" onclick="tabList(event, 'inner-item')">
+                <img src="../img/assets/data.png" alt="">
+                <small>Data Barang</small>
+            </li>
+            <li id="btn-edit" class="links" onclick="tabList(event, 'inner-edit')">
+                <img src="../img/assets/edit.png" alt="">
+                <small>Edit Barang</small>
+            </li>
+            <li id="btn-history" class="links" onclick="tabList(event, 'inner-history')">
+                <img src="../img/assets/marketing.png" alt="">
+                <small>History Barang</small>
+            </li>
+        </ul>
+    </nav>
+
+    <nav id="sidebar-sm">
+        <button class="navbar-toggler navbar-light" onclick="openNav()">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <ul id="side-nav-sm" class="side-nav-sm">
+            <a class="btn-close" href="javascript:void(0)" onclick="closeNav()">&times;</a>
+            <a href="#">
+                <img class="nav-img" src="../img/assets/ngcc.svg" alt="NGC Computer">
+            </a>
+            <li id="btn-item-sm" class="links" onclick="tabList(event, 'inner-item')">
+                <img src="../img/assets/data.png" alt="">
+                <small>Data Barang</small>
+            </li>
+            <li id="btn-edit-sm" class="links" onclick="tabList(event, 'inner-edit')">
+                <img src="../img/assets/edit.png" alt="">
+                <small>Edit Barang</small>
+            </li>
+            <li id="btn-history-sm" class="links" onclick="tabList(event, 'inner-history')">
+                <img src="../img/assets/marketing.png" alt="">
+                <small>History Barang</small>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="inner-item" class="content" onclick="closeNav()">
+        <h3>Data Barang</h3>
+        <div class="card">
+            <table class="table text-left">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">NO</th>
+                        <th scope="col">Nama Barang</th>
+                        <th scope="col">Kategori</th>
+                        <th scope="col">Harga</th>
+                        <th scope="col">Stock</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <div id="inner-edit" class="content" onclick="closeNav()">
+        <h3>Edit Barang</h3>
+        <div class="row break-side">
+            <div class="col card">
+                <b>Tambah Barang</b>
+                <form class="mt-4">
+                    <small class="input-text">Nama Barang :</small>
+                    <input class="form-control">
+                    <br>
+                    <small class="input-text">Kategori :</small>
+                    <select class="form-control">
+                        <option>Default select</option>
+                    </select>
+                    <br>
+                    <div class="form-row">
+                        <div class="col">
+                            <small class="input-text">Harga :</small>
+                            <input class="form-control">
+                        </div>
+                        <div class="col">
+                            <small class="input-text">Stok :</small>
+                            <input class="form-control">
+                        </div>
+                    </div>
+                </form>
+                <div class="d-inline-flex break-tb ml-auto text-right">
+                    <input id="btn-login" class="btn btn-primary mr-2" type="button" value="Tambah" onclick="validate()">
+                    <button class="btn btn-outline-dark" type="reset">Reset</button>
+                </div>
+            </div>
+            <div class="col card">
+                <b>Edit Barang</b>
+                <form class="mt-4">
+                    <small class="input-text">Nama Barang :</small>
+                    <input class="form-control">
+                    <br>
+                    <small class="input-text">Kategori :</small>
+                    <select class="form-control">
+                        <option>Default select</option>
+                    </select>
+                    <br>
+                    <div class="form-row">
+                        <div class="col">
+                            <small class="input-text">Harga :</small>
+                            <input class="form-control">
+                        </div>
+                        <div class="col">
+                            <small class="input-text">Stok :</small>
+                            <input class="form-control">
+                        </div>
+                    </div>
+                </form>
+                <div class="d-inline-flex break-tb ml-auto text-right">
+                    <input id="btn-login" class="btn btn-primary mr-2" type="button" value="Edit" onclick="validate()">
+                    <button class="btn btn-outline-dark" type="reset">Reset</button>
+                </div>
+            </div>
+            <div class="col card">
+                <b>Hapus Barang</b>
+                <form class="mt-4">
+                    <small class="input-text">Nama Barang :</small>
+                    <input class="form-control">
+                    <br>
+                    <small class="input-text">Kategori :</small>
+                    <select class="form-control">
+                        <option>Default select</option>
+                    </select>
+                    <br>
+                    <div class="form-row">
+                        <div class="col">
+                            <small class="input-text">Harga :</small>
+                            <input class="form-control">
+                        </div>
+                        <div class="col">
+                            <small class="input-text">Stok :</small>
+                            <input class="form-control">
+                        </div>
+                    </div>
+                </form>
+                <div class="d-inline-flex break-tb ml-auto text-right">
+                    <input id="btn-login" class="btn btn-primary mr-2" type="button" value="Hapus" onclick="validate()">
+                    <button class="btn btn-outline-dark" type="reset">Reset</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="inner-history" class="content" onclick="closeNav()">
+        <h3>History Barang</h3>
+        <div class="row">
+            <div class="col card">
+                <b>Barang Masuk</b>
+                <table class="table mt-4">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">NO</th>
+                            <th scope="col">Nama Barang</th>
+                            <th scope="col">Harga Beli</th>
+                            <th scope="col">Stock Masuk</th>
+                            <th scope="col">Tanggal Masuk</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col card">
+                <b>Barang Keluar</b>
+                <table class="table mt-4">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">NO</th>
+                            <th scope="col">Nama Barang</th>
+                            <th scope="col">Harga Jual</th>
+                            <th scope="col">Stock Keluar</th>
+                            <th scope="col">Tanggal Keluar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
