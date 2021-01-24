@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/main.css">
-	<link rel="icon" href="assets/ngc.ico">
+	<link rel="icon" href="icon/ngc.ico">
 	<title>NGC Computer</title>
 </head>
 
@@ -14,160 +14,17 @@
 
 <noscript><hr> <h3>Silahkan Mengaktifkan Javascript di Browser Anda.</h3> <hr></noscript>
 
-<header class="carousel slide carousel-fade">
-	<div class="carousel-inner">
-		<div class="carousel-item active">
-			<img class="w-100" src="img/carousels/carousel1.jpg" alt="ROG Zephyrus Duo 15">
-		</div>
-		<div class="carousel-item">
-			<img class="w-100" src="img/carousels/carousel2.jpg" alt="ROG Zephyrus S GX502">
-		</div>
-		<div class="carousel-item">
-			<img class="w-100" src="img/carousels/carousel3.jpg" alt="Lenovo Legion 7i">
-		</div>
-		<div class="carousel-item">
-			<img class="w-100" src="img/carousels/carousel4.jpg" alt="RTX 3080">
-		</div>
-	</div>
-	<a class="carousel-control-prev" href="header" role="button" data-slide="prev">
-		<span class="carousel-control-prev-icon"></span>
-	</a>
-	<a class="carousel-control-next" href="header" role="button" data-slide="next">
-		<span class="carousel-control-next-icon"></span>
-	</a>
-</header>
-
-<nav id="category" class="navbar navbar-expand-lg navbar-dark bg-black">
-	<ul class="navbar-nav w-75 center">
-		<li class="nav-item center">
-			<a class="btn btn-outline-primary" href="menu/laptop.html#category">
-				<img class="category-icon" src="img/assets/laptop.png" alt="Laptop">
-				<br>
-				Laptop
-			</a>
-		</li>
-		<li class="nav-item center">
-			<a class="btn btn-outline-primary" href="menu/mb.html#category">
-				<img class="category-icon" src="img/assets/motherboard.png" alt="Motherboard">
-				<br>
-				Motherboard
-			</a>
-		</li>
-		<li class="nav-item center">
-			<a class="btn btn-outline-primary" href="menu/processor.html#category">
-				<img class="category-icon" src="img/assets/proci.png" alt="Processor">
-				<br>
-				Processor
-			</a>
-		</li>
-		<li class="nav-item center">
-			<a class="btn btn-outline-primary" href="menu/ram.html#category">
-				<img class="category-icon" src="img/assets/ram.png" alt="RAM">
-				<br>
-				RAM
-			</a>
-		</li>
-		<li class="nav-item center">
-			<a class="btn btn-outline-primary" href="menu/hdd.html#category">
-				<img class="category-icon" src="img/assets/hdd.png" alt="HDD/SSD">
-				<br>
-				HDD/SSD
-			</a>
-		</li>
-		<li class="nav-item center">
-			<a class="btn btn-outline-primary" href="menu/psu.html#category">
-				<img class="category-icon" src="img/assets/psu.png" alt="Power Supply">
-				<br>
-				PSU
-			</a>
-		</li>
-		<li class="nav-item center">
-			<a class="btn btn-outline-primary" href="menu/keyboard.html#category">
-				<img class="category-icon" src="img/assets/keyboard.png" alt="Keyboard">
-				<br>
-				Keyboard
-			</a>
-		</li>
-		<li class="nav-item center">
-			<a class="btn btn-outline-primary" href="menu/mouse.html#category">
-				<img class="category-icon" src="img/assets/mouse.png" alt="Mouse">
-				<br>
-				Mouse
-			</a>
-		</li>
-	</ul>
-</nav>
-
-<div id="round-border"></div>
-
-<nav class="navbar navbar-expand-lg navbar-light break-side fix-top hiddenup">
-	<a class="navbar-brand" href="#">
-		<img src="img/assets/ngcc.svg" alt="NGC Computer" height="50px">
-	</a>
-
-	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-top">
-		<span class="navbar-toggler-icon"></span>
-	</button>
-	
-	<div id="nav-top" class="collapse navbar-collapse">
-		<ul class="navbar-nav mr-auto">
-			<li class="nav-item active">
-				<a class="nav-link" href="#">
-					Beranda
-				</a>
-			</li>
-			<li class="nav-item dropdown">
-				<a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">
-					Kategori
-				</a>
-				<div class="dropdown-menu">
-					<a class="dropdown-item" href="menu/laptop.html#category">
-						Laptop
-					</a>
-					<a class="dropdown-item" href="menu/mb.html#category">
-						Motherboard
-					</a>
-					<a class="dropdown-item" href="menu/processor.html#category">
-						Processor
-					</a>
-					<a class="dropdown-item" href="menu/ram.html#category">
-						RAM
-					</a>
-					<a class="dropdown-item" href="menu/hdd.html#category">
-						HDD/SSD
-					</a>
-					<a class="dropdown-item" href="menu/psu.html#category">
-						PSU
-					</a>
-					<a class="dropdown-item" href="menu/keyboard.html#category">
-						Keyboard
-					</a>
-					<a class="dropdown-item" href="menu/mouse.html#category">
-						Mouse
-					</a>
-				</div>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#about">
-					Tentang
-				</a>
-			</li>
-		</ul>
-		<form class="form-inline ml-auto">
-			<input class="form-control ml-auto" type="search" placeholder="Cari Disini">
-			<button class="btn btn-primary mr-auto" type="submit">
-				Cari
-			</button>
-		</form>
-	</div>
-</nav>
+<div id="header"></div>
+<div class="hide">
+<div id="nav-category"></div>
+<div id="nav-top"></div>
 
 <section class="container">
 	<div class="row">
 		<div class="col-lg-5 hiddenleft">
 			<img src="img/products/laptop/rog-duo-15-gx550.png" alt="ROG Zephyrus Duo 15" width="70%">
 		</div>
-		<div class="col hiddencenter">
+		<div class="col hiddencenter delay1">
 			<br>
 			<h3>
 				<b>Semua</b> 
@@ -185,7 +42,7 @@
 <section class="container">
 <div class="row">
 		<div class="col-lg-5 hiddenleft">
-			<img src="img/products/pc/red-pc.png" alt="Build Your Gaming PC" width="50%">
+			<img src="img/products/pc/red-pc.png" alt="Build Your Gaming PC" width="60%">
 		</div>
 		<div class="col hiddencenter">
 			<br>
@@ -246,10 +103,13 @@
 		<br>
 	<div class="row text-left">
 		<div class="col-lg-7 break-tb">
+            <div class="hiddenleft">
 			<h5>
 				<b>Selamat datang di NGC Computer,</b>
 			</h5>
-			<br>
+            <br>
+            </div>
+            <div class="hiddenleft">
 			<p>
 				<b>Toko Komputer</b> 
 				yang menyediakan Anda segala komponen-komponen dan produk terbaik dan terlengkap. Kami berdedikasi untuk memberikan Anda produk terbaik, dengan fokus pada Kenyamanan, Keamanan, dan Kemudahan.
@@ -259,9 +119,10 @@
 			</p>
 			<p>
 				Kami harap Anda puas dengan produk kami. Jika Anda memiliki pertanyaan atau komentar, jangan ragu untuk menghubungi kami.
-			</p>
+            </p>
+            </div>
 		</div>
-		<div class="col break-tb">
+		<div class="col break-tb hiddenright">
 			<p>	
 				<b>
 					Ada Saran, Kritik atau Pertanyaan ?
@@ -349,9 +210,11 @@
 		</div>
 	</div>
 </section>
+</div>
 
-<script src="js/footer.js"></script>
+<div id="footer"></div>
 
+<script src="js/page.js"></script>
 <script src="js/jquery-3.5.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/main.js"></script>
