@@ -1,7 +1,19 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+@font-face {
+    font-family: 'Poppins';
+    src: url('/font/Poppins-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/font/Poppins-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
 
 body {
-  	font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
 	min-width: 440px;
 }
 

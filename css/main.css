@@ -1,8 +1,20 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+@font-face {
+    font-family: 'Poppins';
+    src: url('/font/Poppins-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/font/Poppins-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
 
 @media only screen and (max-width: 990px) {	
 	header {
-		margin-top: 8rem;
+		margin-top: 5rem;
 		margin-bottom: -100px;
 	}
 	
@@ -11,7 +23,7 @@
 	}
 
 	.fix-top {
-		background-color: #fff;
+		background-color: #fcfcfc;
 		position: fixed;
 		top: 0;
 		left: 0;
@@ -28,10 +40,13 @@
 
 html {
 	width: 100%;
-	min-width: 300px;
+    min-width: 300px;
+    scroll-behavior: smooth;
 }
 
 body {
+    background-color: #fcfcfc;
+    color: #090909;
 	font-family: 'Poppins', sans-serif;
 	margin-left: auto;
 	margin-right: auto;
@@ -42,7 +57,7 @@ body {
 
 header {
 	width: 100%;
-	background-color: #000;
+	background-color: #090909;
 }
 
 section {
@@ -63,24 +78,24 @@ footer {
 	margin-bottom: -10px;
 	margin-left: auto;
 	margin-right: auto;
-	background-color: #000;
+	background-color: #090909;
 }
 
 footer a {
     width: 3rem;
     height: 3rem;
-    border: 1px solid #fff;
+    border: 1px solid #fcfcfc;
     display: flex;
     align-items: center;
     justify-content: center;
-	color: #fff;
+	color: #fcfcfc;
 	border-radius: 50%;
 	-webkit-transition: .3s all;
     transition: .3s all;
 }
 
 footer a:hover {
-	border: #000;
+	border: #090909;
 	background-color: #0025FF;
 }
 
@@ -89,10 +104,8 @@ footer img {
 	height: 3rem;
 }
 
-.bg-black {
-	background-color: #000;
-}
 
+/* Penempatan & Posisi */
 .break-side {
 	padding-left: 2rem;
 	padding-right: 2rem;
@@ -108,14 +121,26 @@ footer img {
 	margin-right: 20px;
 }
 
-.category-icon {
-	height: 15px;
-}
-
 .center {
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.center-v {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+/* End - Penempatan & Posisi */
+
+
+/* Objek & Item Lain */
+.bg-black {
+	background-color: #090909;
+}
+
+.category-icon {
+	height: 15px;
 }
 
 .fadein {
@@ -123,24 +148,27 @@ footer img {
     transition: .3s all;
 }
 
+.hide {
+    visibility: hidden;
+}
+
 .hideleft {
 	opacity: 0;
 	padding-right: 10%;
-	-webkit-transition: .3s all;
-	transition: .3s all;
+}
+
+.hideright {
+    opacity: 0;
+    padding-left: 10%;
 }
 
 .hidecenter {
 	opacity: 0;
-	-webkit-transition: .3s all;
-	transition: .3s all;
 }
 
 .hideup {
 	opacity: 0;
 	padding-top: 100px;
-	-webkit-transition: .3s all;
-	transition: .3s all;
 }
 
 .invisible {
@@ -150,9 +178,9 @@ footer img {
 #about a {
     width: 2.5rem;
     height: 2.5rem;
-    border: 1px solid #000;
+    border: 1px solid #090909;
     display: flex;
-    color: #000;
+    color: #090909;
 	border-radius: 50%; 
 	-webkit-transition: .3s all;
     transition: .3s all;
@@ -160,20 +188,23 @@ footer img {
 
 #about a:hover {
 	margin: -5px;
-	border: #fff;
+	border: #fcfcfc;
 }
 
 #round-border {
-	background-color: #000;
+	background-color: #090909;
 	border-radius: 25%;
 	margin-top: -25px;
 	width: 100%;
 	height: 50px;
 }
 
-/* Bootstrap Customization Here */
+/* End - Objek & Item Lain */
+
+
+/* Bootstrap Customization */
 a {
-	color: #000;
+	color: #090909;
 }
 
 a:hover {
@@ -184,8 +215,16 @@ hr {
 	width: 30%;	
 }
 
+.badge {
+    background-color: #0025FF;
+}
+
+.btn {
+    border-radius: 100px;
+}
+
 .btn-link {
-	color: #000;
+	color: #090909;
 }
 
 .btn-primary {
@@ -193,24 +232,32 @@ hr {
 }
 
 .btn-primary:hover {
-	border-color: #000;
+	border-color: #090909;
 	background-color: #001199;
 }
 
 .btn-secondary {
-	background-color: #000;
-	border-color: #000;
+	background-color: #090909;
+	border-color: #090909;
 	margin-left: 2px;
 	margin-right: 2px;
 }
 
+.btn-outline-light {
+    background-color: #fcfcfc;
+}
+
+.btn-outline-light:hover {
+    border-color: #0025FF;
+}
+
 .btn-outline-primary {
-	border-color: #000; 
-	color: #fff;
+	border-color: #090909; 
+	color: #fcfcfc;
 }
 
 .btn-outline-primary:hover {
-	border-color: #000;
+	border-color: #090909;
 	background-color: #0025FF;
 }
 
@@ -224,8 +271,12 @@ hr {
 
 .dropdown-item:hover {
 	border-radius: 5px;
-	color: #fff;
+	color: #fcfcfc;
 	background-color: #0025FF;
+}
+
+.modal-body {
+    font-weight: normal;
 }
 
 .transition {
@@ -234,5 +285,7 @@ hr {
 }
 
 .form-control {
-	max-width: 80%;
+    max-width: 80%;
+    margin-right: -1rem;
 }
+/* End - Bootstrap Customization */
